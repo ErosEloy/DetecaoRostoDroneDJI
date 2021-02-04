@@ -24,7 +24,7 @@ drone.enviar('streamon',ipDrone)
 
 #OPENCV E MODELO
 cap = cv2.VideoCapture('udp://192.168.10.1:11111')
-modelo = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+modelo = cv2.CascadeClassifier('modelo.xml')
 
 while True:
 	_, frame = cap.read()
